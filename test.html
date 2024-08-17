@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .side-bar{
+        position: absolute;
+        right: 0;
+        width: 150px;
+        height: 99vh;
+        background-color: black;
+        color: white;
+        padding: 10px;
+
+    background: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2)
+    );
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+    }
+
+    .side-bar ul{
+        text-align: center;
+        list-style: none;    
+    }
+    .side-bar li{
+        margin: 20px 0;
+    }
+    .side-bar ul li a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+<body>
+    <div class="side-bar">
+        <i class="fa-solid fa-xmark fa-2x"></i>
+        <ul>
+            <li onclick="free()" class="pointer">Free Gifts</li>
+            <li  ><a class="white text-none" href="#jokes">jokes</a></li>
+            <li onclick="sleep()" class="pointer">sleep</li>
+            <li>About me</li>
+        </ul>
+    </div>
+    
+    
+    <script src="https://kit.fontawesome.com/46e1aebc0e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

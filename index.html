@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes on you</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="first">
+        <!-- <img class="bg-forest" src="forest.jpg" alt="forest"> -->
+   <!-- Nav bar when width is more than 800px -->
+<nav class="nav-bar poppins-regular">
+    <h1>joy</h1>
+    <!-- come into view only when width is less than 800px -->
+    <span id="burger" onclick="openSidebar()"><i class="fa-solid fa-bars"></i></span> 
+    <ul>
+        <li onclick="free()" class="pointer">Free Gifts</li>
+        <li><a class="white text-none" href="#jokes">jokes</a></li>
+        <li onclick="sleep()" class="pointer">sleep</li>
+        <li><a class="white text-none" href="#About Me">About Me</a></li>
+    </ul>
+</nav>
+
+<!-- Nav-bar when width is less than 800px  -->
+<div id="side-bar" class="side-bar">
+    <span id="cross" onclick="closeSidebar()"><i class="fa-solid fa-xmark fa-2x"></i></span> 
+    <ul>
+        <li onclick="free()" class="pointer">Free Gifts</li>
+        <li><a class="white text-none" href="#jokes">jokes</a></li>
+        <li onclick="sleep()" class="pointer">sleep</li>
+        <li><a class="white text-none" href="#About Me">About Me</a></li>
+    </ul>
+</div>
+    <div class="box">
+        <div class="text-box poppins-regular">
+            <h1 class="poppins-bold">Jokes to make your day worth</h1>
+            <h3 class="poppins-extralight">Just click on Generate</h3>
+            <button class="bgc-darkgreen white poppins-bold">Hidden Gem</button>
+        </div>
+        <div class="smile">
+            <img src="smile.png" alt="smile">
+        </div>
+    </div>
+    
+</div>
+<div id="jokes" class="second">
+    <div class="card">
+        <h2 class="poppins-bold white">Generate Joke</h2>
+        <button onclick="joke()" class="bgc-darkgreen white">Generate</button>
+    </div>
+    <div class="joke poppins-bold">
+        <h1 id="output" >Laugh at your life; 
+            it’s the grandest joke of all</h1> 
+    </div>
+
+</div>
+    
+<footer id="About Me">
+    <a
+      class="button poppins-light"
+      href="https://www.linkedin.com/in/altaf-shaikh-2b1632315/"
+      >My LinkedIn</a
+    >
+    <h3 class="poppins-light">
+      This whole website is built and designed by me it still need
+      improvements in designs so i will keep updating it.If you want to
+      contact me click on the button and see my linkedIn profile.
+    </h3>
+  </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/46e1aebc0e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
